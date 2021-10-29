@@ -14,7 +14,7 @@ public class CarDaoImpl implements CarDao {
     {
         cars = new ArrayList<>();
         cars.add(new Car("Седан", "KIA Rio ", 2015));
-        cars.add(new Car("Хэтчбек", "Chevrolet Lacetti", 2008));
+        cars.add(new Car("Хэчбек", "Chevrolet Lacetti", 2008));
         cars.add(new Car("Универсал", "Audi A4 allroad quattro", 2019));
         cars.add(new Car("Лифтбэк", "SKODA OCTAVIA", 2021));
         cars.add(new Car("Купе", "Nissan GT-R", 2010));
