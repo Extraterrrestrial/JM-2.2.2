@@ -3,6 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+<!--    Настройка кодировки в Tomcat, MySQL, Eclipse, IDEA-->
+<!--    https://jazzteam.org/ru/technical-articles/setting-encoding-tomcat-mysql-eclipse-idea/-->
 
     <groupId>ru.javamentor</groupId>
     <artifactId>spring-mvc</artifactId>
@@ -11,6 +13,8 @@
     <packaging>war</packaging>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>5.2.0.RELEASE</spring.version>
     </properties>
 
@@ -36,6 +40,7 @@
             <artifactId>thymeleaf</artifactId>
             <version>3.0.12.RELEASE</version>
         </dependency>
+<!--        https://qna.habr.com/q/311805-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-nop</artifactId>

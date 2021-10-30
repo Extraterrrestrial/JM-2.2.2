@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<!--Настройка кодировки в Tomcat, MySQL, Eclipse, IDEA-->
+<!--https://jazzteam.org/ru/technical-articles/setting-encoding-tomcat-mysql-eclipse-idea/-->
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +15,7 @@
     <tr>
         <th>Классификация/Classification</th>
         <th>Модель/Model</th>
-        <th>Год выпуска/Year</th>
+        <th>Год выпуска/Year of release</th>
     </tr>
 
     <tr th:each="car : ${cars}">
