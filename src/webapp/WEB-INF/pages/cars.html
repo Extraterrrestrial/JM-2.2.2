@@ -1,23 +1,25 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Список машин</title>
+    <title>Список машин/List of cars</title>
     <style>table th, table td {padding: 5px;}</style>
 </head>
 <body>
+<p> Список машин/List of cars </p>
 <table>
     <tr>
-        <th>Классификация</th>
-        <th>Модель</th>
-        <th>Год выпуска</th>
+        <th>Классификация/Classification</th>
+        <th>Модель/Model</th>
+        <th>Год выпуска/Year</th>
     </tr>
 
     <tr th:each="car : ${cars}">
-        <td th:text="${car.getTypeOfVehicle()}"/>
-        <td th:text="${car.getModel()}"/>
-        <td th:text="${car.getYearOfManufacture()}"/>
+        <td th:text="${car.getTypeOfVehicle()}"></td>
+        <td th:text="${car.getModel()}"></td>
+        <td th:text="${car.getYearOfManufacture()}"></td>
     </tr>
 
 </table>
