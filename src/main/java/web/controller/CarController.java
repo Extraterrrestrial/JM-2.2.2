@@ -21,13 +21,4 @@ public class CarController {
         model.addAttribute("cars", carService.listCars(count));
         return "cars";
     }
-
-//    @GetMapping(value = "/cars")
-//    public String printCars(@RequestParam(defaultValue="5") Integer count, ModelMap model) {
-//        CarServiceImpl carsServiceImpl = new CarServiceImpl();
-//        List<Car> qtyCars = carsServiceImpl.carList(count);
-//        model.addAttribute("cars", qtyCars);
-//        return "cars";
-//}
-
 }
